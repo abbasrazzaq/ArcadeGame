@@ -347,7 +347,7 @@ internal void update_and_draw_girl_face(RNG *rng, Girl_Face *girl_face, Game_Ren
         
         if(girl_face->movement_flags & girl_movement_flag_move_to_boy)
         {
-            if(abs(girl_face->original_position.x - girl_face->position.x) < 50.0f)
+            if(fabs(girl_face->original_position.x - girl_face->position.x) < 50.0f)
             {
                 girl_face->position.x -= (dt * 16.0f);
             }
