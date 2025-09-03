@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8479CDBD20DC259E00F0E7EC /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8479CDBC20DC259E00F0E7EC /* AppDelegate.mm */; };
+		8479CDC020DC259E00F0E7EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8479CDBF20DC259E00F0E7EC /* main.m */; };
+		8479CDC220DC259E00F0E7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8479CDC120DC259E00F0E7EC /* Assets.xcassets */; };
+		8479CDC520DC259E00F0E7EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8479CDC320DC259E00F0E7EC /* MainMenu.xib */; };
+		8479CDCE20DC310E00F0E7EC /* game_view.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8479CDCD20DC310E00F0E7EC /* game_view.mm */; };
+		8479CDD020DC314E00F0E7EC /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8479CDCF20DC314E00F0E7EC /* OpenGL.framework */; };
+		84B9498B21EA7838004567FD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B9498A21EA7838004567FD /* CoreAudio.framework */; };
+		84B9498D21EA7872004567FD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B9498C21EA7872004567FD /* AudioToolbox.framework */; };
+		84D2F72E21106CC700351BF1 /* twosome.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 84D2F72D21106CC700351BF1 /* twosome.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8479CDB820DC259E00F0E7EC /* macosx_twosome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macosx_twosome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8479CDBB20DC259E00F0E7EC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8479CDBC20DC259E00F0E7EC /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
+		8479CDBF20DC259E00F0E7EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8479CDC120DC259E00F0E7EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8479CDC420DC259E00F0E7EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		8479CDC620DC259E00F0E7EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8479CDCC20DC30E100F0E7EC /* game_view.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = game_view.h; sourceTree = "<group>"; };
+		8479CDCD20DC310E00F0E7EC /* game_view.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = game_view.mm; sourceTree = "<group>"; };
+		8479CDCF20DC314E00F0E7EC /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		84B9498A21EA7838004567FD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
+		84B9498C21EA7872004567FD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		84D2F72D21106CC700351BF1 /* twosome.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = twosome.cpp; path = ../twosome.cpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8479CDB520DC259E00F0E7EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84B9498D21EA7872004567FD /* AudioToolbox.framework in Frameworks */,
+				84B9498B21EA7838004567FD /* CoreAudio.framework in Frameworks */,
+				8479CDD020DC314E00F0E7EC /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8479CDAF20DC259E00F0E7EC = {
+			isa = PBXGroup;
+			children = (
+				84B9498C21EA7872004567FD /* AudioToolbox.framework */,
+				84B9498A21EA7838004567FD /* CoreAudio.framework */,
+				8479CDCF20DC314E00F0E7EC /* OpenGL.framework */,
+				8479CDCD20DC310E00F0E7EC /* game_view.mm */,
+				8479CDCC20DC30E100F0E7EC /* game_view.h */,
+				84D2F72D21106CC700351BF1 /* twosome.cpp */,
+				8479CDBA20DC259E00F0E7EC /* macosx_twosome */,
+				8479CDB920DC259E00F0E7EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8479CDB920DC259E00F0E7EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8479CDB820DC259E00F0E7EC /* macosx_twosome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8479CDBA20DC259E00F0E7EC /* macosx_twosome */ = {
+			isa = PBXGroup;
+			children = (
+				8479CDBB20DC259E00F0E7EC /* AppDelegate.h */,
+				8479CDBC20DC259E00F0E7EC /* AppDelegate.mm */,
+				8479CDC120DC259E00F0E7EC /* Assets.xcassets */,
+				8479CDC320DC259E00F0E7EC /* MainMenu.xib */,
+				8479CDC620DC259E00F0E7EC /* Info.plist */,
+				8479CDBE20DC259E00F0E7EC /* Supporting Files */,
+			);
+			path = macosx_twosome;
+			sourceTree = "<group>";
+		};
+		8479CDBE20DC259E00F0E7EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8479CDBF20DC259E00F0E7EC /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8479CDB720DC259E00F0E7EC /* macosx_twosome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8479CDC920DC259E00F0E7EC /* Build configuration list for PBXNativeTarget "macosx_twosome" */;
+			buildPhases = (
+				8479CDB420DC259E00F0E7EC /* Sources */,
+				8479CDB520DC259E00F0E7EC /* Frameworks */,
+				8479CDB620DC259E00F0E7EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = macosx_twosome;
+			productName = macosx_twosome;
+			productReference = 8479CDB820DC259E00F0E7EC /* macosx_twosome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8479CDB020DC259E00F0E7EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Abbas Razzaq";
+				TargetAttributes = {
+					8479CDB720DC259E00F0E7EC = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 8479CDB320DC259E00F0E7EC /* Build configuration list for PBXProject "macosx_twosome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8479CDAF20DC259E00F0E7EC;
+			productRefGroup = 8479CDB920DC259E00F0E7EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8479CDB720DC259E00F0E7EC /* macosx_twosome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8479CDB620DC259E00F0E7EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8479CDC220DC259E00F0E7EC /* Assets.xcassets in Resources */,
+				8479CDC520DC259E00F0E7EC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8479CDB420DC259E00F0E7EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8479CDC020DC259E00F0E7EC /* main.m in Sources */,
+				8479CDCE20DC310E00F0E7EC /* game_view.mm in Sources */,
+				84D2F72E21106CC700351BF1 /* twosome.cpp in Sources */,
+				8479CDBD20DC259E00F0E7EC /* AppDelegate.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8479CDC320DC259E00F0E7EC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8479CDC420DC259E00F0E7EC /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8479CDC720DC259E00F0E7EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8479CDC820DC259E00F0E7EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		8479CDCA20DC259E00F0E7EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_PREPROCESSOR_DEFINITIONS = TWOSOME_SLOW;
+				INFOPLIST_FILE = macosx_twosome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "arazzaq.macosx-twosome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/../../../build";
+			};
+			name = Debug;
+		};
+		8479CDCB20DC259E00F0E7EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(EFFECTIVE_PLATFORM_NAME)";
+				GCC_PREPROCESSOR_DEFINITIONS = TWOSOME_SLOW;
+				INFOPLIST_FILE = macosx_twosome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				OTHER_CPLUSPLUSFLAGS = "$(OTHER_CFLAGS)";
+				PRODUCT_BUNDLE_IDENTIFIER = "arazzaq.macosx-twosome";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYMROOT = "$(PROJECT_DIR)/../../../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8479CDB320DC259E00F0E7EC /* Build configuration list for PBXProject "macosx_twosome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8479CDC720DC259E00F0E7EC /* Debug */,
+				8479CDC820DC259E00F0E7EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8479CDC920DC259E00F0E7EC /* Build configuration list for PBXNativeTarget "macosx_twosome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8479CDCA20DC259E00F0E7EC /* Debug */,
+				8479CDCB20DC259E00F0E7EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8479CDB020DC259E00F0E7EC /* Project object */;
+}

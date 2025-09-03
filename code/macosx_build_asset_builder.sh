@@ -1,0 +1,1 @@
+clang asset_builder.cpp -DTWOSOME_INTERNAL=1 -DTWOSOME_SLOW=0 -I../internal_libs -o ../../build/asset_builder.sh
